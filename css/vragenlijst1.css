@@ -1,0 +1,57 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+} */
+
+
+
+/* label{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
+
+#submit-stukje{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-left: 110px;
+}
+.submit{
+    margin-left: 30px;
+}
+.msg{
+    width: 430px;
+    height: 120px;
+}
+
+/* ster */
+    .star{
+        color: #20c6d7;
+        font-size: 3rem;
+        }
+
+    .star::before{
+        content: '\2606';    
+        cursor: pointer;
+        }
+
+    .star.rated::before{
+        content: '\2605';  
+        }
+            
+    .stars{
+        counter-reset: rateme 0;   
+        font-size: 2.0rem;
+        font-weight: 900;
+        }
+
+    .star.rated{
+    counter-increment: rateme 1;
+    }
+
+ /* .stars::after{ */
+        /* content: counter(rateme) '/10'; */
+         /* } */
+      
